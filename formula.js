@@ -1,6 +1,6 @@
 /** 
  * Дізнатись нормальну вагу.
- * @author Валерія Степаніщева <stlera2010@gmail.com>
+ * @author Валерія Степаніщева <https://github.com/stlera>
  * @param {number} height Зріст користувача.
  * @param {number} gender Стать користувача.
  * @returns {number} Норма ваги.
@@ -16,7 +16,7 @@ function NormalWeight(height, gender){
 
 /** 
  * Доцільність продовження дієти.
- * @author Валерія Степаніщева <stlera2010@gmail.com>
+ * @author Валерія Степаніщева <https://github.com/stlera>
  * @param {number} currentWeight Поточна вага користувача.
  * @param {number} beginWeight Початкова вага користувача.
  * @param {number} wishWeight Бажана вага користувача.
