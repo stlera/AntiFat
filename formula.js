@@ -1,3 +1,10 @@
+/** 
+ * Дізнатись нормальну вагу.
+ * @author Валерія Степаніщева <stlera2010@gmail.com>
+ * @param {number} height Зріст користувача.
+ * @param {number} gender Стать користувача.
+ * @returns {number} Норма ваги.
+ */
 function NormalWeight(height, gender){
 	if(gender == 0){                                //female
 		return (height - 110) * 1.15;
@@ -7,6 +14,16 @@ function NormalWeight(height, gender){
 	}
 }
 
+/** 
+ * Доцільність продовження дієти.
+ * @author Валерія Степаніщева <stlera2010@gmail.com>
+ * @param {number} currentWeight Поточна вага користувача.
+ * @param {number} beginWeight Початкова вага користувача.
+ * @param {number} wishWeight Бажана вага користувача.
+ * @param {number} height Зріст користувача.
+ * @param {number} gender Стать користувача.
+ * @returns {boolean} Продовжувати дієту чи ні.
+ */
 function WeightControl(currentWeight, beginWeight, wishWeight, height, gender){
 	var normalWeight = NormalWeight(height, gender);
 	
@@ -16,5 +33,3 @@ function WeightControl(currentWeight, beginWeight, wishWeight, height, gender){
 	else*/ if(leftWeight <= 0) return false;          //should stop weight lost
 	else return true;                               //should continue	
 }
-
-
